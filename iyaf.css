@@ -1,0 +1,1507 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    height: 100vh;
+}
+.container{
+    width: 70%;
+    overflow: hidden;
+    padding: 10px;
+    margin:0 auto;
+}
+.btn{
+    /* background-color:  rgb(13, 187, 218); */
+    background-color: rgb(0, 78, 77);
+    color: #fff;
+    padding: 10px;
+    border: none;
+   
+}
+nav{
+  
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height:10vh;
+    position: fixed;
+    color: #fff;
+    width: 100%;
+    z-index: 2;
+    
+}
+nav .icon{
+    width: 20px;
+   margin-left:10px;
+   color: #fff;
+}
+nav img{
+    width: 60px;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+nav ul{
+    display: flex;
+    margin-right: 40px;
+}
+nav ul li{
+    margin: 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+nav ul li a:hover{
+    font-weight:bold;
+    background-color: #fff;
+    padding: 4px;
+    color: #333;
+    padding: 5px;
+}
+nav .sub-menu1
+{
+    display: none;
+   
+}
+nav ul li:hover .sub-menu1
+{
+    display: block;
+    position: absolute;
+    background-color:rgb(0, 78, 77);
+    margin-top: 5px;
+    margin-left: -100px;
+    padding: 15px;
+    animation:sub-men 1.5s;
+  
+}
+@keyframes sub-men {
+    0%{top: 0px;}
+    100%{top:55px;}
+}
+
+nav ul li:hover .sub-menu1 ul
+{
+    display: block;
+    margin: 10px;
+    padding-left: 0px;
+    
+   
+}
+nav ul li:hover .sub-menu1 ul li{
+    width: 170px;
+    padding: 6px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: 12px;
+}
+nav ul li:hover .sub-menu1 ul li:last-child
+{
+  border-bottom: none;
+}
+
+nav #menu,#close{
+    margin-right: 60px;
+    width: 40px;
+} 
+.mobile{
+    display: none;
+}
+.window-scroll
+{
+    background-color:rgb(0, 78, 77);
+
+}
+/* end of navbar */
+
+/* start of the header*/
+header{
+    background-image:url("images/muslim\ student.jpg");
+    background-position: center;
+    background-color: rgb(49, 168, 168);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.8;
+}
+header .container{
+    width: 85%;
+}
+header h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 60px;
+    color: #eee;
+    animation: styllet 2s ease infinite;
+    
+}
+@keyframes styllet{
+    0%{
+        left: 10px;
+        right: 100px;
+        color: rgb(19, 10, 155);
+    }
+    25%{
+        left: 20px;
+        right: 30px;
+        color: rgb(196, 17, 172); 
+    }
+    50%{
+        left: 10px;
+        right: 100px;
+        color: rgb(69, 185, 15);
+    }
+    100%{
+        left: 10px;
+        right: 100px;
+        color: rgb(165, 10, 43);
+    }
+}
+header h1:nth-child(2){
+    animation-delay: 2s;
+}
+
+header h1:nth-child(4){
+    animation-delay: 4s;
+}
+
+header h1:nth-child(5){
+    animation-delay: 5s;
+}
+header #slide{
+    color: #fff;
+    font-weight: bold;
+    transition: 2s ease-in ;
+}
+header p{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+}
+/*end of header */
+
+/*teachers style section */
+#teachers .container{
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 78, 77);
+    text-transform: capitalize;
+}
+/*end of teachers style section */
+
+/*first section container */
+#first-section{
+    background-color: #eee;
+}
+#first-section .container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows: minmax(70px,auto);
+    grid-gap:1rem;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+#first-section .container h3{
+    font-size: 16px;
+}
+#first-section .container img{
+    width: 60px;
+}
+/*end of first section container  */
+
+/*amir style section */
+#amir{
+    background-color: #eee;
+}
+#amir .container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content: space-between;
+    grid-gap:2rem;
+    text-align: center;
+}
+#amir .container .amir-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#amir .container .amir-photo{
+    width: 100%;
+}
+#amir .container img{
+    width: 200px;
+    border-radius: 50%;
+    border:3px solid rgb(0, 78, 77);
+}
+/* education secretary style section */
+#edu-secretary{
+    background-color: #eee;
+}
+
+#edu-secretary .container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content: space-between;
+    grid-gap:2rem;
+    text-align: center;
+}
+
+#edu-secretary .container .edu-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#edu-secretary .container .edu-photo{
+    width: 100%;
+}
+#edu-secretary .container img{
+    width: 200px;
+    border-radius: 50%;
+    border:3px solid rgb(0, 78, 77);
+}
+/*familier section container  */
+#familier .container{
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 78, 77);
+    text-transform: capitalize;
+}
+#co-founder .container{
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 78, 77);
+    text-transform: capitalize;
+}
+/*end of familier section container  */
+
+/*end of familier logos section container  */
+#fami-logos{
+    background-color: #eee;
+}
+#fami-logos .container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows: minmax(70px,auto);
+    grid-gap:1px;
+    padding: 10px;
+    text-align: center;
+    align-items: center; 
+}
+#fami-logos .container img{
+    width: 60px;
+}
+
+/*end of familier section container  */
+
+/*expert team style section */
+
+#expert .container{
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 78, 77);
+    text-transform: capitalize;
+}
+#expert-photo .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: rgb(0, 78, 77);;
+}
+
+#expert-photo .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 78, 77);
+}
+.card{
+    background: #eee;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    background: rgb(0, 78, 77);
+    border-radius: 20px 20px 0 0;
+}
+
+.card:nth-of-type(2){
+    background: #eee;
+    color: #000;
+}
+
+.card:nth-of-type(3){
+    background: #eee;
+    color: #000;
+}
+
+.card:nth-of-type(4){
+    background: #eee;
+    color: #000;
+}
+
+.card:nth-of-type(5){
+    background: #eee;
+    color: #000;
+}
+#expert-photo .card .media img{
+    width: 20px;
+
+}
+.card .card-content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+.card:hover.card .media{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all 3s ease;
+    cursor: pointer;
+   
+}
+.card .media img{
+    color: #fff;
+    opacity: 0.6;
+    margin: 2px;
+    
+}
+.card .media img:hover{
+    opacity: 1;
+}
+.card .profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+.card .profession .name{
+    font-size: 30px;
+}
+
+#expert-photo .container .content{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows:minmax(70px,auto);
+    grid-gap: 2rem;
+    padding: 10px;
+    width: 100%;
+
+}
+/*end of expert team section container  */
+
+/*end of about section container  */
+#about{
+    background-image:url("images/female\ muslim.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#about .container h2{
+    text-align: center;
+    align-items: center;
+    color:  #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-top: 20%;
+}
+#about .container h3{
+    font-size: 30px;
+    color: #fff;
+}
+.lower{
+    background-color: #eee;
+}
+.lower .container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows:minmax(70px,auto);
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+#history .container{
+    text-align: justify;
+
+}
+.lower .container .box{
+    /* background:rgb(13, 187, 218)  ; */
+    background-color:#eee;
+    border: 1px solid rgb(0, 78, 77);
+    border-radius: 10px;
+    width: 250px;
+    padding: 5px;
+    color: #333;
+}
+.lower .container img{
+    width: 200px;
+}
+.lower .container img{
+    border-radius: 50%;
+    padding-top:10px;
+
+}
+.lower .container h3,p{
+    padding:0;
+    margin: 0;
+    text-align: center;
+}
+#main .text{
+    font-weight: bold;
+} 
+.lower .container .resize{
+    width: 170px;
+    margin-left: 40px;
+
+}
+/*end of about style */
+
+/* start of the contact style */
+#contact{
+    margin-top:80px;
+    background-image:url("images/books-1-500x333.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    color: #fff;
+   
+   
+}
+#contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+   
+}
+#contact form{
+    background-color: #fff;
+    color: #000;
+    height: 40vh;
+    padding: 10px;
+    margin-top: 70px;
+   
+}
+
+#contact form button{
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+}
+#contact .container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-auto-rows:minmax(70px,auto);
+    justify-content: space-between;
+    grid-gap: 2rem;
+
+}
+#contact .container .information h2{
+    color: rgb(0, 78, 77);
+}
+#contact .container .information{
+    color: #fff;
+    line-height: 1rem;
+    font-size: 16px;
+    margin-top: 40px;
+   
+   
+}
+#contact .container .information > div{
+    line-height: 1.5rem;
+}
+#contact .container .information img{
+    width: 30px;
+    border-radius: 50%;
+}
+#contact .container form input[type='text'],input[type='email']{
+    border-style: none;
+    border-bottom-style: solid;
+    width: 100%;
+    height: 30px;
+  
+}
+/*services style section */
+#services{
+    margin-top:80px;
+    background-image:url("images/featured-news-toefl-ibt-test-taker-announcements.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    color: #fff;
+    
+}
+#services h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: #fff;
+}
+#services .container h3{
+    color: #fff;
+}
+#services .container{
+    display: flex;
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+}
+#services .container .lop p{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#services .container .lop{
+    width: 60%;
+}
+#services .container .star{
+    background-color:rgb(0, 78, 77);
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+#services .container .star:nth-of-type(2){
+    background-color: blue;
+}
+/* style of the courses section */
+#courses{
+    background-color:#eee;
+}
+#senior .container{
+  text-align: center;
+  align-items: center;
+  /* color:rgb(13, 187, 218) ; */
+  color: rgb(0, 78, 77);
+}
+
+
+#subject .container{
+    text-align: center;
+    align-items: center;
+    /* color:rgb(13, 187, 218) ; */
+    color: rgb(0, 78, 77);
+  }
+#junior .container{
+    text-align: center;
+    align-items: center;
+    /* color:rgb(13, 187, 218) ; */
+    color: rgb(0, 78, 77);
+  }
+#courses .container{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-auto-rows: minmax(70px,auto);
+    grid-gap:1rem;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+#courses .container img{
+    width: 30px;
+    border-radius: 50%;
+}
+#courses .container .course{
+    background-color: rgb(0, 78, 77);
+    color: #fff;
+    box-shadow: rgb(56, 55, 55);
+    border-style:dotted;
+    padding:10px;
+    height: 35vh;
+}
+
+#courses .container .course:nth-of-type(1){
+    background-color: aqua;
+}
+
+#courses .container .course:nth-of-type(2){
+    background-color: royalblue;
+}
+
+#courses .container .course:nth-of-type(3){
+    background-color:red;
+}
+#courses .container .course:nth-of-type(5){
+    background-color: #333;
+}
+
+#courses .container .course:nth-of-type(7){
+    background-color: indigo;
+}
+
+#courses .container .course:nth-of-type(9){
+    background-color: aqua;
+}
+/* style of the courses1 section*/
+#courses1{
+    background-color:#eee;
+}
+
+#courses1 .container .course:nth-of-type(1){
+    background-color: aqua;
+}
+
+#courses1 .container .course:nth-of-type(2){
+    background-color: royalblue;
+}
+
+#courses1 .container .course:nth-of-type(3){
+    background-color:red;
+}
+#courses1 .container .course:nth-of-type(5){
+    background-color: #333;
+}
+
+#courses1 .container .course:nth-of-type(7){
+    background-color: indigo;
+}
+
+#courses1 .container .course:nth-of-type(9){
+    background-color: aqua;
+}
+#courses1 .container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows: minmax(70px,auto);
+    grid-gap:1rem;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+#courses1 .container img{
+    width: 30px;
+    border-radius: 50%;
+}
+#courses1 .container .course{
+    background-color:rgb(0, 78, 77);
+    color: #fff;
+    box-shadow: rgb(56, 55, 55);
+    border-style:dotted;
+    padding:10px;
+    height: 35vh;
+
+}
+
+#some-courses .container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows: minmax(70px,auto);
+    grid-gap:1rem;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+#some-courses .container img{
+    width: 30px;
+    border-radius: 50%;
+}   
+
+
+#some-courses .container .course{
+    background-color: rgb(0, 78, 77);
+    color: #fff;
+    box-shadow: rgb(56, 55, 55);
+    border-style:dotted;
+    padding:10px;
+    height: 35vh;
+
+}
+/* registration style */
+#registration{
+   margin-top: 50px;
+    background-image:url("images/zaytuna-classrooms-by-Naim-Beyah_web_pic-17.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    color: #fff;
+}
+#registration h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+#registration .container form{
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+    border:3px solid #fff;
+    width:50%;
+    height: 60%;
+    box-sizing: border-box;
+ 
+}
+#registration form input[type="text"]{
+        padding: 5px;
+        width: 100%;
+        min-height:40px;
+        border-radius: 10px;
+}
+#registration form button{
+    background-color: rgb(0, 78, 77);
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+/*style of the footer*/
+
+footer{
+    background-color: rgb(0, 78, 77);
+    color: #fff;
+}
+footer .container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+/*media query of the tablet  768px*/
+@media(max-width:768px){
+ nav ul{
+    display: block;
+    position: fixed;
+    top: 100px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    overflow-y: scroll;
+    font-size: 20px;
+    margin-right: 0px;
+    text-align: left;
+    transition: 0.3s;
+    
+ }
+ nav ul li{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-top: 70px;
+   
+    
+ }
+ 
+ nav ul li a{
+    color: #000;  
+ }
+ 
+ nav .sub-menu1 .menu{
+    display: none;
+ }
+ .mobile{
+    display: flex;
+ }
+.close{
+    display: none;
+}
+ nav #menu{
+    display:block;
+    margin-right: 60px;
+}
+nav .active{
+    right: 0px;
+}
+
+.close img{
+    width: 30px;
+    font-size: 10px;
+    margin-right: 60px;
+    margin-top: 0px; 
+}
+header h1{
+    font-size: 30px;
+    margin-top: 200px;
+}
+header p{
+    font-size: 30px;
+}
+#amir .container,
+#edu-secretary .container{
+    width: 90%;
+}
+#expert-photo .container{
+    width: 100%;
+}
+#fami-logos .container{
+    grid-gap:1rem;
+    padding: 10px;
+    text-align: center;
+    align-items: center; 
+}
+#fami-logos .container img{
+    width: 50px;
+}
+.lower .container{
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 1px;
+    justify-content: space-around;
+    padding: 10px;
+   
+}
+
+.lower .container .pics{
+    background:rgb(0, 78, 77);
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 160px;
+    padding: 3px;
+    color: #333;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+.lower .container #big{
+    width: 150px;
+}
+
+#about .container h2{
+    margin-top: 50%;
+}
+#contact{
+    height: 70vh;
+}
+#contact .container{
+    width: 90%;
+}
+#contact form{
+    height: 20vh;
+    margin-top:70%;
+}
+
+#services{
+    height: 70vh;
+}
+
+#courses .container, #courses1 .container{
+    width: 90%;
+
+}
+#courses .container .course, #courses1 .container .course{
+    height: 25vh;
+}
+
+#registration .container form{
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+    border:3px solid #fff;
+    width:100%;
+    height: 60%;
+    box-sizing: border-box;
+ 
+}
+#registration form button{
+    background-color: rgb(0, 78, 77);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+footer .container{
+    width: 90%;
+    justify-content: space-between;
+}
+}
+/*media query of smartphone  425PX*/
+@media(max-width:425px){
+    nav ul{
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: -300px;
+        width: 200px;
+        height: 100vh;
+        background-color: #fff;
+        margin-right: 0px;
+        text-align: left;
+        transition: 0.3s;
+        transition-timing-function: ease;
+        
+     }
+     nav ul li{
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        font-size: 17px;
+      
+        
+     }
+     nav ul li a{
+        color: #000;
+     }
+     nav .sub-menu1 .menu{
+        display: none;
+     }
+     
+ nav #menu{
+    display:block;
+    margin-right: 60px;
+}
+    nav .active{
+        right: 0px;
+    }
+nav ul li{
+    margin:5px;
+    list-style: none;
+}   
+  nav h1{
+    font-size: 15px;
+  }   
+  nav img{
+    margin-left: 0px;
+    width: 40px;
+  }
+header p{
+    font-size: 20px;
+}
+header h1,h3{
+    font-size: 30px;
+}
+#first-section .container,#fami-logos .container{
+    width: 90%;
+}
+
+#first-section .container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+#amir .container{
+    grid-template-columns:1fr;
+    width: 70%;
+}
+#edu-secretary .container{
+    width: 90%;
+    grid-template-columns:repeat(1,1fr);
+}
+#expert-photo .container .content{
+    width: 100%;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 0.5px;
+
+}
+#some-courses .container{
+    grid-template-columns:repeat(2,1fr);
+}
+#some-courses .container .course{
+    height: 40vh;
+}
+#about .container h2{
+    margin-top: 10%;
+}
+
+.lower .container{
+    grid-template-columns:repeat(1,1fr);
+    width: 60%;
+
+}
+.lower .container .pics{
+    width: 100%;
+    padding: 20px;
+}
+.lower .container img{
+    width: 200px;
+}
+#contact{
+    height: 1100px;
+    justify-content: center;
+    color: #fff;  
+}
+
+#contact form{
+    height: 40vh;
+    padding: 10px;
+    margin-top: 70px;
+
+}
+#contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+#contact h3{
+    font-size: 17px;
+}
+#contact .container{
+    grid-template-columns:1fr;
+   
+}
+#services{
+    height:1030px;
+    background-position: center;
+    margin-top: 20px;
+
+}
+#services .container h3{
+    color: #fff;
+}
+#services .container{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+#services .container .lop p{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#services .container .lop{
+    width: 80%;
+}
+#courses .container, #courses1 .container{
+    grid-template-columns:repeat(2,1fr);
+}
+#courses .container .course, #courses1 .container .course{
+    height: 40vh;
+    padding: 10px;
+}
+
+
+#registration .container form{
+    width:100%;
+    height: 60%;
+}
+#registration form input[type="text"]{
+        padding: 5px;
+        width: 100%;
+        min-height:40px;
+        border-radius: 10px;
+}
+#registration form button{
+    background-color: rgb(0, 78, 77);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+footer .container{
+    width: 90%;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+}
+/*media query of the 375 px */
+
+
+@media(max-width:375px){
+    nav ul{
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: -300px;
+        width: 200px;
+        height: 100vh;
+        background-color: #fff;
+        margin-right: 0px;
+        text-align: left;
+        transition: 0.3s ease;
+        
+     }
+     nav ul li{
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        font-size: 17px;
+      
+        
+     }
+     nav ul li a{
+        color: #000;
+     }
+     nav .sub-menu1 .menu{
+        display: none;
+     }
+    
+ nav #menu{
+    display:block;
+    margin-right: 60px;
+}
+    nav .active{
+        right: 0px;
+    }
+    
+nav ul li{
+    margin:5px;
+    list-style: none;
+}   
+  nav h1{
+    font-size: 10px;
+    text-align: center;
+  }   
+  nav img{
+    margin-left: 20px;
+    width: 40px;
+  }
+header p{
+    font-size: 20px;
+}
+header h1,h3{
+    font-size: 30px;
+}
+#first-section .container,#fami-logos .container{
+    width: 90%;
+}
+
+#first-section .container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+#amir .container{
+    grid-template-columns:1fr;
+    width: 70%;
+}
+#edu-secretary .container{
+    width: 90%;
+    grid-template-columns:repeat(1,1fr);
+}
+#expert-photo .container .content{
+    width: 100%;
+    grid-template-columns:repeat(1,1fr);
+    grid-gap: 1rem;
+
+}
+#some-courses .container{
+    grid-template-columns:repeat(2,1fr);
+    width: 90%;
+}
+#some-courses .container .course{
+    height: 40vh;
+}
+#about .container h2{
+    margin-top: 10%;
+}
+
+.lower .container{
+    grid-template-columns:repeat(1,1fr);
+    width: 80%;
+
+}
+.lower .container .pics{
+    width: 100%;
+    padding: 20px;
+}
+.lower .container img{
+    width: 200px;
+}
+#contact{
+   height: 1100px;
+   justify-content: center;
+   color: #fff;  
+}
+
+#contact form{
+   height: 40vh;
+   padding: 10px;
+   margin-top: 70px;
+
+}
+#contact h2{
+   text-align: center;
+   text-transform: uppercase;
+   padding-top: 10px;
+}
+#contact .container{
+   grid-template-columns:1fr;
+  
+}
+#services{
+   height:1120px;
+   background-position: center;
+   margin-top: 20px;
+
+}
+#services .container h3{
+   color: #fff;
+}
+#services .container{
+   width: 100%;
+   margin: 0;
+   padding: 10px;
+}
+#services .container .lop p{
+   font-size: 17px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 600;
+}
+#services .container .lop{
+   width: 80%;
+}
+#courses .container, #courses1 .container{
+   grid-template-columns:repeat(2,1fr);
+}
+#courses .container .course, #courses1 .container .course{
+   height: 40vh;
+   padding: 10px;
+}
+#registration .container{
+   width: 90%;
+}
+
+#registration .container form{
+   width:100%;
+   height: 60%;
+}
+#registration form input[type="text"]{
+       padding: 5px;
+       width: 100%;
+       min-height:40px;
+       border-radius: 10px;
+}
+#registration form button{
+   background-color:  rgb(0, 78, 77);
+   color: #fff;
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+}
+
+footer .container{
+   display: block;
+   text-align: center;
+   font-size: 13px;
+}
+}
+
+/*media query of the 320px */
+
+@media(max-width:320px){
+    nav ul{
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: -300px;
+        width: 200px;
+        height: 100vh;
+        background-color: #eee;
+        color: #000;
+        margin-right: 0px;
+        text-align: left;
+        transition: 0.3s ease;
+        
+     }
+     nav ul li{
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        font-size: 17px;
+      
+        
+     }
+     
+     nav .sub-menu1 .menu{
+        display: none;
+     }
+    
+ nav #menu{
+    display:block;
+    margin-right: 60px;
+}
+    nav .active{
+        right: 0px;
+    }
+nav ul li{
+    margin:5px;
+    list-style: none;
+}   
+  nav h1{
+    font-size: 10px;
+    text-align: center;
+  }   
+  nav img{
+    margin-left: 20px;
+    width: 40px;
+  }
+header p{
+    font-size: 20px;
+}
+header h1,h3{
+    font-size: 30px;
+}
+#first-section .container,#fami-logos .container{
+    width: 90%;
+}
+
+#first-section .container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+#amir .container{
+    grid-template-columns:1fr;
+    width: 70%;
+}
+#edu-secretary .container{
+    width: 90%;
+    grid-template-columns:repeat(1,1fr);
+}
+#expert-photo .container .content{
+    width: 100%;
+    grid-template-columns:repeat(1,1fr);
+    grid-gap: 1rem;
+
+}
+#some-courses .container{
+    grid-template-columns:repeat(2,1fr);
+    width: 90%;
+}
+#some-courses .container .course{
+    height: 40vh;
+}
+#about .container h2{
+    margin-top: 10%;
+}
+
+.lower .container{
+    grid-template-columns:repeat(1,1fr);
+    width: 80%;
+
+}
+.lower .container .pics{
+    width: 100%;
+    padding: 20px;
+}
+.lower .container img{
+    width: 200px;
+}
+
+#contact{
+    height: 1100px;
+    justify-content: center;
+    color: #fff;  
+}
+
+#contact form{
+    height: 40vh;
+    padding: 10px;
+    margin-top: 70px;
+
+}
+#contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+#contact .container{
+    grid-template-columns:1fr;
+   
+}
+#contact h3{
+    font-size: 13px;
+}
+#services{
+    height:1260px;
+    background-position: center;
+    margin-top: 20px;
+
+}
+#services .container h3{
+    color: #fff;
+}
+#services .container{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+#services .container .lop p{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#services .container .lop{
+    width: 80%;
+}
+#courses .container, #courses1 .container{
+    grid-template-columns:repeat(2,1fr);
+}
+#courses .container .course, #courses1 .container .course{
+    height: 40vh;
+    padding: 10px;
+}
+#registration .container{
+    width: 90%;
+}
+
+#registration .container form{
+    width:100%;
+    height: 60%;
+}
+#registration form input[type="text"]{
+        padding: 5px;
+        width: 100%;
+        min-height:40px;
+        border-radius: 10px;
+}
+#registration form button{
+    background-color: rgb(0, 78, 77);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+footer .container{
+    width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 10px;
+}
+}
